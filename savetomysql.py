@@ -25,4 +25,3 @@ for i in a:
         cursor.execute(sql,(title,content,url))
         con.commit()#提交
     print(url)
-#con.close()#关闭
