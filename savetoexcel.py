@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 wbk = xlwt.Workbook()
 my = wbk.add_sheet('my')
-res=requests.get("https://rmboot.com/")
+res=requests.get("https://www.baidu.com/")
 res.encoding="utf8"
 soup=BeautifulSoup(res.text,"lxml")
 a=soup.select("a")
@@ -14,4 +14,4 @@ for i in a:
         my.write(n,0,i.text)
         my.write(n,1,i.get("href"))
         n=n+1
-wbk.save('E:/Uploads/test.xls')
+wbk.save('E:/test.xls')
