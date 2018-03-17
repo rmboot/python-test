@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 wbk = xlwt.Workbook()
 my = wbk.add_sheet('my')
-res=requests.get("http://123.206.41.19")
+res=requests.get("https://rmboot.com/")
 res.encoding="utf8"
 soup=BeautifulSoup(res.text,"lxml")
 a=soup.select("a")
